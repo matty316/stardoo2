@@ -1,4 +1,5 @@
 #include "common.h"
+#include "app.h"
 
 #define WIDTH 1280
 #define HEIGHT 800
@@ -8,14 +9,10 @@ int main(int argc, char *argv[]) {
 
     SetTargetFPS(60);
 
-    while(!WindowShouldClose()) {
-        BeginDrawing();
+    struct App app;
+    initApp(&app);
 
-        ClearBackground(RAYWHITE);
-        DrawText("Congrats! You created your first window!", 190, 200, 20, LIGHTGRAY);
-
-        EndDrawing();
-    }
+    loop(&app);
 
     CloseWindow();
     return 0;

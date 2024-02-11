@@ -7,7 +7,6 @@ void initPlayer(struct Player *player) {
     player->energy = 0.0;
 }
 
-void freePlayer(struct Player *player) {
-    free(player);
-    player = NULL;
+void updatePlayer(struct Player *player) {
+    
 }

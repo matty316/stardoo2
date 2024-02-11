@@ -9,6 +9,6 @@ struct App {
 };
 
 void initApp(struct App *app);
-void freeApp(struct App *app);
+void loop(struct App *app);
 
 #endif

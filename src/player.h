@@ -11,6 +11,6 @@ struct Player {
 };
 
 void initPlayer(struct Player *player);
-void freePlayer(struct Player *player);
+void updatePlayer(struct Player *player);
 
 #endif
